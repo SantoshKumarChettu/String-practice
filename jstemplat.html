@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = "Santosh"
+        document.write(`hello Mrs ${x}`)
+        console.log(`hello Mrs ${x}`)
+        var games=["kho-kho","kabaddi","cricket","basket ball"]
+        var obj = {
+            'name':"santosh",
+            'roll Number':"429",
+            'college':"GMRIT",
+            'location':"rajam",
+            'city':"Srikakulam"
+        }
+        for (i in games){
+            document.write("<br>")
+            document.write(`${i}:${games[i]}`)
+           
+
+        }var i =1
+        for(key in obj){
+            
+            document.write("<br>"+(i++)+":"+key+":"+obj[key]+"<br>")
+        }
+    </script>
+</body>
+</html>

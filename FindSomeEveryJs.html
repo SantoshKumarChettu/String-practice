@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindSome&Every</title>
+</head>
+<body>
+    <script>
+        // Find method is call back function
+        //It returns the first element of array for which callback function returns true
+        let movies=['rrr','Mahanati','Maharshi','Kgf','Bimbisaara','Murari']
+        // in find method it able to handle 3 parameters
+       // movies.find((elemen,key,array)=>{
+        // retrurns a first satisfied element to the condition
+        var m=movies.find((element)=>{
+            return element.startsWith('Mahar')
+        })
+        console.log(m)
+        // filter
+        var mo=movies.filter((element)=>{
+            return element.startsWith('Maha')
+        })
+        console.log(mo)
+        // Some method is returns a boolen value 
+        // It returns the True when the element in the array is satisfied to the condition .
+        //Example 
+        var veri=movies.some((ele)=>{
+          if(ele.startsWith('M') ){
+            console.log(ele)
+          } 
+        })
+        console.log('It checks the every element the array ')
+        // Every Method 
+        // It returns the boolen value either the condition is true or false 
+        // Here Its Quiet opposite to the Some method 
+        // I.e: It returns true when the every element in the array should be satisfied with the condition 
+        // then only it will returns true other wise it will returns false
+        // Example:
+            let Marks=[50,43,65,87,98,54,42]
+            var pass=Marks.every((ele)=>{
+                return ele>35
+            })
+            console.log(pass)
+    </script>
+</body>
+</html>

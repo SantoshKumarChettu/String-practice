@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sal=[40000,39500,50000,45000]
+        console.log(sal)
+        sal.forEach((salary,i,arr)=>{//here i=index and arry is optional
+            //***console.log(salary)// each salary
+            //***console.log(i)//index
+            //***console.log(arr)//complete array
+            let inc=salary/10
+            sal[i]=salary+inc
+            })
+        console.log(sal)
+        //***here we use direct function in method forEach
+        //***we use arrow funcction , we can also use named and anonymOus functions
+        //***method 1
+    </script>
+</body>
+</html>

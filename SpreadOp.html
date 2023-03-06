@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator </title>
+</head>
+<body>
+    <script>
+        // Spread operator(...) -> It takes the iterable (i.e array,string, map,set)and expands or sepate each element of iterable 
+        var arr =[23,34,45,56,67,78,8,89,890]
+        console.log(arr.unshift(7))// obsrve the difference in console 
+        console.log(...arr)
+        
+        var arr2=[...arr]// easy copy the array
+        console.log(...arr2)
+        arr2.push(2)
+        console.log(...arr2)
+        var a1=[1,2,4,8,6]
+        var a2=[3,5,7,9,0]
+
+        // combine array
+        var a3=[...a1,...a2]
+        console.log(a3)
+
+        var a4=[34,54,...a3,87,54,...arr]
+        console.log(a4)
+
+        add=(a,b,c,d,e)=>{
+            console.log(a+b+c+d+e)
+        }
+        add(...a1)
+        add(...a2)
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MethodsOfStringObject.html</title>
+</head>
+<body>
+    <script>
+     let k='My name is Santosh '// premitive datatype model
+     //not an object type so string object is need
+     // this primitive data type also creates an string object by default 
+     var y=new String('Hello World ! Welocome to java Script')
+     console.log(k)
+console.log(y)
+     //methods
+     console.log(k.charAt(8))// 9th index value of k i.e i
+
+     console.log(y.charAt(8))
+
+     console.log(k.indexOf('s'))//if the value is not there then it will return -1
+     console.log(y.indexOf('Script'))// reurns the S position by compare all the characters in the word with the string
+
+     console.log(k.lastIndexOf('a'))// check the character from backside so it will returns tha laaasst value of a
+let b=k.toUpperCase()
+console.log(b)
+
+     console.log(b.toLocaleLowerCase())
+
+     console.log(b.toLocaleUpperCase())
+
+     console.log(b.toLowerCase())
+
+let x=' Have a nice day'
+
+     let con= k.concat(y,x)// content is added to k // here we gave multipre strings
+     console.log(con)
+
+     console.log(con.length) // length of string not a function
+
+     console.log(con.trim())// trim the initial spaces
+
+     console.log(con.split(' '))// form as array and split based on that argument
+
+     console.log(con.startsWith('M'))// it returns true or false
+
+     console.log(con.startsWith('m'))// case sensitive retuns false
+     // similarly endsWith()here it is also returns the value i.e true or false while the string  ends with the given argument or not
+
+     console.log(con.slice(1,32))// 32 is exculsive value in slice the characters printed in console from 1 to 31
+
+     // if we gave only one value in the slice then it will print the sentance from that index to end of the string
+
+     console.log(con.slice(32))
+
+     console.log(con.slice(-32))// last value check from back
+// similar in substring but i was take only +ve indexes
+// and substr is different from substring
+// string.substr(index, no of chaacteres do u want to print)
+        console.log(con.substr(33,5))
+
+        //include checkes the characters or not 
+        console.log(con.includes(k))
+        // we also gave the value to include from where it have to be checked 
+
+        console.log(con.includes('My',5))// my is not there in after that 5 index
+
+        // display the ASCII valued characted value in the string
+        // charCodeAt()
+        console.log(con.charCodeAt(0))// M value is 77 so it will retunr
+
+        console.log(con.repeat(4))// repeate the string  in 4 times 
+        //replace
+
+        console.log(con.replace('Santosh','Vehan'))
+    </script>
+</body>
+</html>
